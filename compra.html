@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Página para confirmar compra-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="compra.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Compra</title>
+</head>
+
+<body>
+    <header class="topnav">
+        <a class="imagen" href="main.html">
+            <img src="./Imágenes/LOGOTIPO.png" alt=".">
+        </a>
+        <div class="busqueda">   
+            <!--a class="active" href="main.html">Inicio</a>
+            <a href="publicar.html">Publicar</a-->
+            <form class="search-form" action="./busqueda.html" method="GET">
+                <input type="text" name="search" placeholder="Buscar..." required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="boton">
+            <a href="login.html">Iniciar sesión</a>
+            <a href="register.html">Registrarse</a>
+        </div>
+    </header>
+    <section class="pagina">
+        <aside>
+            <div class="sidebar">
+                <a href="main.html">Inicio</a>
+                <a href="publicar.html">Publicar</a>
+                <a href="crearlistas.html">Crear Lista</a>
+                <a href="listas.html">Listas</a>
+                <a href="Carrito.html">Carrito</a>
+             </div>
+        </aside>
+
+    <main>
+        <div class="container">
+            <h2>Ingresa tu domicilio</h2>
+            <form id="registroForm" action="pedro pedro pedro pedro pe" method="post" onsubmit="return validacionCompras()">
+                <div class="div-group">
+                    <div class="form-group">
+                        <input placeholder="País de Residencia" type="text" id="pais" name="pais" required>
+                    </div>
+                </div>
+                <div class="div-group">
+                    <div class="form-group">
+                        <input placeholder="Estado" type="text" id="estado" name="estado" required>
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="Ciudad" type="text" id="ciudad" name="ciudad" required>
+                    </div>
+                </div>
+                <div class="div-group">
+                    <div class="form-group">
+                        <input placeholder="Colonia" type="text" id="colonia" name="colonia" required>
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="Código Postal" type="text" id="CP" name="CP" required>
+                    </div>
+                </div>
+                <div class="div-group">
+                    <div class="form-group">
+                        <input placeholder="Calle" type="text" id="calle" name="calle" required>
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="Número externo" type="text" id="NoExt" name="NoExt" required>
+                    </div>
+                </div>
+                <div class="linea-en-blanco"></div>
+                <input type="submit" value="Comprar">
+        </div>
+    </main>
+</section>
+    <footer>
+        <p>2024 Mercado Vivo. Todos los derechos reservados. Israel&Catherine Co. Property.</p>
+    </footer>
+</body>
+<script src="Validacion/validacionCompras.js"></script>
+</html>
