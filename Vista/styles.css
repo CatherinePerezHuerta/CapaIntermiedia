@@ -1,0 +1,98 @@
+/* Aplicar la fuente Verdana a toda la página */
+body {
+    font-family: Verdana, sans-serif;
+}
+
+/* Estilo para el título h1 */
+h1 {
+    color: red;
+}
+
+/* Estilo para el título h2 */
+h2 {
+    color: #1E90FF; /* Azul definido como hexadecimal */
+}
+
+/* Estilos para la lista */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Cambiar el color del segundo elemento de la lista */
+ul li:nth-child(2) {
+    color: green;
+}
+
+/* Poner en negritas el último elemento de la lista */
+ul li:last-child {
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: orange; /* Cambia de color cuando se pasa el mouse */
+}
+
+a:visited {
+    color: purple; /* Cambia de color cuando el enlace ha sido visitado */
+}
+
+/* Contenedor para los divs */
+.outer-box {
+    background-color: blue;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Estilo para los divs */
+.box {
+    border: 3px solid black;
+    width: 32%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+th, tr:first-child td {
+    background-color: green;
+    color: white;
+}
+
+/* Alternar colores en las celdas de la tabla */
+td:nth-child(even):not(:first-child),
+tr:nth-child(even):not(:first-child) td {
+    background-color: lightgray;
+}
+
+td:nth-child(odd):not(:first-child),
+tr:nth-child(odd):not(:first-child) td {
+    background-color: white;
+}
